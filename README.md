@@ -1,6 +1,6 @@
 # Klipper_config
 
-This is my custom configuration for use with Klipper. I am includin the docs folder for easy ref in my repo.
+This is my custom configuration for use with Klipper. I am includin the docs & sample config folders for easy ref in my repo.
 
 ## Klipper
 https://www.klipper3d.org/
