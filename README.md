@@ -14,3 +14,11 @@ https://e3d-online.com/products/v6-all-metal-hotend
 # Firmware information
 
 Set the hardware to `LPC1769` when setting firmware 
+
+# Implimenting this
+
+`git clone https://github.com/Capp3/klipper_config.git ~/klipper_config`
+
+Then create a symlink for the file in the klipper config location
+
+ln -s 
