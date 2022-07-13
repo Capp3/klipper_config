@@ -16,7 +16,7 @@ This is my custom configuration for use with Klipper. I am includin the docs & s
 
 # Firmware information
 
-Set the hardware to `LPC1769` when setting firmware
+Set the hardware to `LPC1769` when setting firmware when using the Smoothie clone
 
 # Implimenting this
 
