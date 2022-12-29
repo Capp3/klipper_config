@@ -24,4 +24,4 @@ Set the hardware to `LPC1769` when setting firmware when using the Smoothie clon
 
 Then create a symlink for the file in the klipper config location
 
-`ln -s ./klipper_config/tevo_sbase.cfg ./printer.cfg`
+`ln -s ./klipper_config/tevo_basev13.cfg ./printer.cfg`
