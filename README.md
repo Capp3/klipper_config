@@ -57,12 +57,14 @@ Go to Klipper Directory and create firmware
 
 Clear old firmwares
 
-```make clear
+```
+make clear
 ```
 
 Then setup the firmware
 
-```make menuconfig
+```
+make menuconfig
 make
 ```
 
@@ -72,7 +74,8 @@ Given no other drive are attqached, the Pico should register as block device
 `/dev/sda
 Mount the block device and copy the Klipper firmware file to it
 
-```sudo mount /dev/sda1 /mnt
+```
+sudo mount /dev/sda1 /mnt
 sudo cp out/klipper.uf2 /mnt
 sudo umount /mnt
 ```
