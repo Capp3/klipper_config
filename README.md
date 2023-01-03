@@ -30,22 +30,21 @@ Then create a symlink for the file in the klipper config location
 
 Working on incorporating a RPI Pico / RP2040 as an aux mcu for accels
 
-## The SPI Bus info
+### RPi Pico Hardware info
 
-Two buses, but avilable on differnt pins. alias' are as noted in ""
+#### SPI Bus info
 
->"spi0a", (SPI Bus 0, Pin Set 0)
-BUS_PINS_spi0a, gpio0,gpio3,gpio2, cs-gpio1
-"spi0b", (SPI Bus 0, Pin Set 1)
-BUS_PINS_spi0b, gpio4,gpio7,gpio6
-"spi0c", (SPI Bus 0, Pin Set 2)
-BUS_PINS_spi0c, gpio16,gpio19,gpio18
-"spi0d", (SPI Bus 0, Pin Set 3)
-BUS_PINS_spi0d, gpio20,gpio23,gpio22
+Two buses, but avilable on differnt pins. alias are as diffined in Klipper
 
->"spi1a", (SPI Bus 1, Pin Set 4);
-BUS_PINS_spi1a, gpio8,gpio11,gpio10
-"spi1b", (SPI Bus 1, Pin Set 5);
-BUS_PINS_spi1b, gpio12,gpio15,gpio14
-"spi1c", (SPI Bus 1, Pin Set 6);
-BUS_PINS_spi1c, gpio24,gpio27,gpio26
+| Bus     | Alias | RX/MISO | TX/MOSI | SCK    | CS     |
+| ------- | ----- | ------- | ------- | ------ | ------ |
+| SPI0/0  | spi0a | gpio0   | gpio3   | gpio2  | gpio1  |
+| SPI0/1  | spi0b | gpio4   | gpio7   | gpio6  | gpio5  |
+| SPI0/2  | spi0c | gpio16  | gpio19  | gpio18 | gpio17 |
+| SPI0/3* | spi0d | gpio20  | gpio23  | gpio22 |        |
+| ------- | ----- | ------- | ------- | ------ | ------ |
+| SPI1/4  | spi1a | gpio8   | gpio11  | gpio10 | gpio9  |
+| SPI1/5  | spi1b | gpio12  | gpio15  | gpio14 | gpio13 |
+| SPI1/6* | spi1c | gpio24  | gpio27  | gpio26 |        |
+
+*- Pins are defined in the Klipper Code, but not marked on most Pico pinouts
