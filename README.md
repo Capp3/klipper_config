@@ -48,3 +48,31 @@ Two buses, but avilable on differnt pins. alias are as diffined in Klipper
 | SPI1/6* | spi1c | gpio24  | gpio27  | gpio26 |        |
 
 *- Pins are defined in the Klipper Code, but not marked on most Pico pinouts
+
+#### Pico Firmware
+
+Go to Klipper Directory and create firmware
+
+`cd ~/klipper/
+
+Clear old firmwares
+
+`make clear
+
+Then setup the firmware
+
+`make menuconfig
+`make
+
+##### Flashing Firmware
+
+Given no other drive are attqached, the Pico should register as block device 
+`/dev/sda
+Mount the block device and copy the Klipper firmware file to it
+
+```sudo mount /dev/sda1 /mnt
+sudo cp out/klipper.uf2 /mnt
+sudo umount /mnt
+```
+
+After un-mounting, the Pico should automatically reboot with the new firmware
