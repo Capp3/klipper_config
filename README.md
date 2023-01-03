@@ -33,7 +33,8 @@ Working on incorporating a RPI Pico / RP2040 as an aux mcu for accels
 ## The SPI Bus info
 
 Two buses, but avilable on differnt pins. alias' are as noted in ""
-"spi0a", (SPI Bus 0, Pin Set 0)
+
+>"spi0a", (SPI Bus 0, Pin Set 0)
 BUS_PINS_spi0a, gpio0,gpio3,gpio2, cs-gpio1
 "spi0b", (SPI Bus 0, Pin Set 1)
 BUS_PINS_spi0b, gpio4,gpio7,gpio6
@@ -42,7 +43,7 @@ BUS_PINS_spi0c, gpio16,gpio19,gpio18
 "spi0d", (SPI Bus 0, Pin Set 3)
 BUS_PINS_spi0d, gpio20,gpio23,gpio22
 
-"spi1a", (SPI Bus 1, Pin Set 4);
+>"spi1a", (SPI Bus 1, Pin Set 4);
 BUS_PINS_spi1a, gpio8,gpio11,gpio10
 "spi1b", (SPI Bus 1, Pin Set 5);
 BUS_PINS_spi1b, gpio12,gpio15,gpio14
