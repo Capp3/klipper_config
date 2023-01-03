@@ -57,12 +57,14 @@ Go to Klipper Directory and create firmware
 
 Clear old firmwares
 
-`make clear
+```make clear
+```
 
 Then setup the firmware
 
-`make menuconfig
-`make
+```make menuconfig
+make
+```
 
 ##### Flashing Firmware
 
