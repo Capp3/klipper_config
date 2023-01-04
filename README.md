@@ -49,6 +49,30 @@ Two buses, but avilable on differnt pins. alias are as diffined in Klipper
 
 *- Pins are defined in the Klipper Code, but not marked on most Pico pinouts
 
+#### i2c Bus info
+
+In an attempt to get a BMP280 temp sensor to work.
+
+Not sure about using i2c and SPI at the same time. 
+
+| Alias | SDA    | SCL   |
+| ----- | -----  | ----- |
+| i2c0a | gpio0  | gpio1 |
+| i2c0b | gpio4  | gpio5 |
+| i2c0c | gpio8  | gpio9 |
+| i2c0d | gpio12 | gpio13 |
+| i2c0e | gpio16 | gpio17 |
+| i2c0f | gpio20 | gpio21 |
+| i2c0g | gpio24 | gpio25 |
+| i2c0h | gpio28 | gpio29 |
+| i2c1a | gpio2  | gpio3 |
+| i2c1b | gpio6  | gpio7 |
+| i2c1c | gpio10 | gpio11 |
+| i2c1d | gpio14 | gpio15 |
+| i2c1e | gpio18 | gpio19 |
+| i2c1f | gpio22 | gpio23 |
+| i2c1g | gpio26 | gpio27 |
+
 #### Pico Firmware
 
 Go to Klipper Directory and create firmware
