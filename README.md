@@ -77,7 +77,9 @@ Not sure about using i2c and SPI at the same time.
 
 Go to Klipper Directory and create firmware
 
-`cd ~/klipper/
+```
+cd ~/klipper/
+```
 
 Clear old firmwares
 
