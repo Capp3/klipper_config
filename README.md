@@ -14,6 +14,11 @@ This is my custom configuration for use with Klipper. I am includin the docs & s
 
 <https://e3d-online.com/products/v6-all-metal-hotend>
 
+## MCU Physical Connection
+
+MCUs connected, and flashed, will be findable using;
+`ll /dev/serial/by-id/*`
+
 ## Firmware information
 
 Set the hardware to `LPC1768` when setting firmware when using the Smoothie clone
@@ -107,3 +112,23 @@ sudo umount /mnt
 ```
 
 After un-mounting, the Pico should automatically reboot with the new firmware
+
+## Mainsail
+
+### USB Webcam
+
+#### Before you do all the stuff below, try linking the klipper_config directory in this repository to the Mainsail Klipper Config Dir
+
+`ln -s ./klipper_config/ ~/klipper_config`
+
+#### Or do all this
+
+Need  to locate camera "long name" with
+`ll  /dev/v4l/by-id/`
+
+Then edit `/home/pi/klipper_config/webcam.txt` and add:
+
+```txt
+camera="usb"
+camera_usb_options="-r 640x480 -f 10 -d /dev/v4l/by-id/usb-046d_Logitech_Webcam_C930e_C88D4AEE-video-index0
+```
