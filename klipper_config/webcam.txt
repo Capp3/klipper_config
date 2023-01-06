@@ -1,0 +1,2 @@
+camera="usb"
+camera_usb_options="-r 640x480 -f 10 -d /dev/v4l/by-id/usb-046d_Logitech_Webcam_C930e_C88D4AEE-video-index0
