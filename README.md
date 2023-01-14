@@ -122,7 +122,7 @@ RP2040s reseting is messed up in klipper, use the below to correct
 SSH to the klipper host 
 
 ```bash
-sudo apt install uhubctl
+sudo apt install uhubctl -y
 sudo nano /etc/rc.local
 ```
 
