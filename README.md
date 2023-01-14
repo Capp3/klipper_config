@@ -113,6 +113,26 @@ sudo umount /mnt
 
 After un-mounting, the Pico should automatically reboot with the new firmware
 
+##### Pico (RP2040) Reseting issue
+
+RP2040s reseting is messed up in klipper, use the below to correct
+
+###### Workaround to connect rp2040 on startup or reboot
+
+SSH to the klipper host 
+
+```bash
+sudo apt install uhubctl
+sudo nano /etc/rc.local
+```
+
+Insert this text before `exit 0`
+
+```bash
+uhubctl -l 1-1 -a 2
+sleep 1 && uhubctl -l 1-1 -a 2
+```
+
 ## Mainsail
 
 ### USB Webcam
