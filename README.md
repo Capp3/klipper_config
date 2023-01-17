@@ -21,7 +21,7 @@ MCUs connected, and flashed, will be findable using;
 
 ## Firmware information
 
-Set the hardware to `LPC1768` when setting firmware when using the Smoothie clone
+Set the hardware to `LPC1769` when setting firmware when using the Smoothie clone
 
 ## Implimenting this
 
