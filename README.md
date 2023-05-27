@@ -31,6 +31,8 @@ Then create a symlink for the file in the klipper config location
 
 `ln -s ./klipper_config/tevo_sbase.cfg ./printer.cfg`
 
+`ln -s ./klipper_config/my_macros.cfg ./my_macros.cfg`
+
 ## Digging into a second MCU
 
 Working on incorporating a RPI Pico / RP2040 as an aux mcu for accels
