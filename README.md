@@ -101,7 +101,7 @@ make
 
 ##### Flashing Firmware
 
-Given no other drive are attqached, the Pico should register as block device 
+Given no other drive are attached, the Pico should register as block device 
 `/dev/sda
 Mount the block device and copy the Klipper firmware file to it
 
